@@ -48,19 +48,6 @@
 			}
 		},
 		{
-			"contents": "{\n	\"statusbar_branch\": true,\n	\"path_to_git_unixes\": \"\", //example: /usr/local/git/bin/git\n	\"syntax_blame\": \"\" //example: \"Git Blame.tmLanguage\"\n}\n",
-			"file": "/home/nickdsc/.config/sublime-text-3/Packages/SideBarGit/SideBarGit.sublime-settings",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 146,
-				"line_ending": "Unix",
-				"read_only": true,
-				"scratch": true
-			}
-		},
-		{
 			"file": "_includes/sidebar.html",
 			"settings":
 			{
@@ -85,10 +72,10 @@
 			}
 		},
 		{
-			"contents": "Searching 23 files for \"theme\"\n\n/development/projects/10_misc/semanticbeeng.github.io/README.md:\n    1  # Lanyon\n    2  \n    3: Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.\n    4  \n    5  ![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)\n    .\n   12  - [Options](#options)\n   13    - [Sidebar menu](#sidebar-menu)\n   14:   - [Themes](#themes)\n   15    - [Reverse layout](#reverse-layout)\n   16  - [Development](#development)\n   ..\n   21  ## Usage\n   22  \n   23: Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.\n   24  \n   25  \n   ..\n   43  \n   44  \n   45: ### Themes\n   46  \n   47: Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).\n   48  \n   49: ![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)\n   50: ![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)\n   51  \n   52: There are eight themes available at this time.\n   53  \n   54: ![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)\n   55  \n   56: To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:\n   57  \n   58  ```html\n   59: <body class=\"theme-base-08\">\n   60    ...\n   61  </body>\n   62  ```\n   63  \n   64: To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.\n   65  \n   66  \n\n/development/projects/10_misc/semanticbeeng.github.io/_config.yml:\n    7  # Setup\n    8  title:               Lanyon\n    9: tagline:             'A Jekyll theme'\n   10: description:         'A reserved <a href=\"http://jekyllrb.com\" target=\"_blank\">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href=\"https://twitter.com/mdo\" target=\"_blank\">@mdo</a>.'\n   11  url:                 http://lanyon.getpoole.com\n   12  baseurl:             ''\n\n/development/projects/10_misc/semanticbeeng.github.io/about.md:\n    8  </p>\n    9  \n   10: In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).\n   11  \n   12: There are currently two themes built on Poole:\n   13  \n   14  * [Hyde](http://hyde.getpoole.com)\n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-01-example-content.md:\n    6  \n    7  <div class=\"message\">\n    8:   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.\n    9  </div>\n   10  \n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-02-introducing-lanyon.md:\n    4  ---\n    5  \n    6: Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.\n    7  \n    8  ### Built on Poole\n    9  \n   10: Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:\n   11  \n   12  * Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))\n   ..\n   24  * Sidebar includes support for textual modules and a dynamically generated navigation with active link support\n   25  * Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes\n   26: * [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes\n   27  \n   28  [Head to the readme](https://github.com/poole/lanyon#readme) to learn more.\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/lanyon.css:\n   25   * Pagination\n   26   * Reverse layout\n   27:  * Themes\n   28   */\n   29  \n   ..\n  436  \n  437  /*\n  438:  * Themes\n  439   *\n  440   * Apply custom color schemes by adding the appropriate class to the `body`.\n  ...\n  443  \n  444  /* Red */\n  445: .theme-base-08 .sidebar,\n  446: .theme-base-08 .sidebar-toggle:active,\n  447: .theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {\n  448    background-color: #ac4142;\n  449  }\n  450: .theme-base-08 .container a,\n  451: .theme-base-08 .sidebar-toggle,\n  452: .theme-base-08 .related-posts li a:hover {\n  453    color: #ac4142;\n  454  }\n  455  \n  456  /* Orange */\n  457: .theme-base-09 .sidebar,\n  458: .theme-base-09 .sidebar-toggle:active,\n  459: .theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {\n  460    background-color: #d28445;\n  461  }\n  462: .theme-base-09 .container a,\n  463: .theme-base-09 .sidebar-toggle,\n  464: .theme-base-09 .related-posts li a:hover {\n  465    color: #d28445;\n  466  }\n  467  \n  468  /* Yellow */\n  469: .theme-base-0a .sidebar,\n  470: .theme-base-0a .sidebar-toggle:active,\n  471: .theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {\n  472    background-color: #f4bf75;\n  473  }\n  474: .theme-base-0a .container a,\n  475: .theme-base-0a .sidebar-toggle,\n  476: .theme-base-0a .related-posts li a:hover {\n  477    color: #f4bf75;\n  478  }\n  479  \n  480  /* Green */\n  481: .theme-base-0b .sidebar,\n  482: .theme-base-0b .sidebar-toggle:active,\n  483: .theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {\n  484    background-color: #90a959;\n  485  }\n  486: .theme-base-0b .container a,\n  487: .theme-base-0b .sidebar-toggle,\n  488: .theme-base-0b .related-posts li a:hover {\n  489    color: #90a959;\n  490  }\n  491  \n  492  /* Cyan */\n  493: .theme-base-0c .sidebar,\n  494: .theme-base-0c .sidebar-toggle:active,\n  495: .theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {\n  496    background-color: #75b5aa;\n  497  }\n  498: .theme-base-0c .container a,\n  499: .theme-base-0c .sidebar-toggle,\n  500: .theme-base-0c .related-posts li a:hover {\n  501    color: #75b5aa;\n  502  }\n  503  \n  504  /* Blue */\n  505: .theme-base-0d .sidebar,\n  506: .theme-base-0d .sidebar-toggle:active,\n  507: .theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {\n  508    background-color: #6a9fb5;\n  509  }\n  510: .theme-base-0d .container a,\n  511: .theme-base-0d .sidebar-toggle,\n  512: .theme-base-0d .related-posts li a:hover {\n  513    color: #6a9fb5;\n  514  }\n  515  \n  516  /* Magenta */\n  517: .theme-base-0e .sidebar,\n  518: .theme-base-0e .sidebar-toggle:active,\n  519: .theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {\n  520    background-color: #aa759f;\n  521  }\n  522: .theme-base-0e .container a,\n  523: .theme-base-0e .sidebar-toggle,\n  524: .theme-base-0e .related-posts li a:hover {\n  525    color: #aa759f;\n  526  }\n  527  \n  528  /* Brown */\n  529: .theme-base-0f .sidebar,\n  530: .theme-base-0f .sidebar-toggle:active,\n  531: .theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {\n  532    background-color: #8f5536;\n  533  }\n  534: .theme-base-0f .container a,\n  535: .theme-base-0f .sidebar-toggle,\n  536: .theme-base-0f .related-posts li a:hover {\n  537    color: #8f5536;\n  538  }\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/poole.css:\n   26   * Pagination\n   27   * Reverse layout\n   28:  * Themes\n   29   */\n   30  \n\n77 matches across 7 files\n\n\nSearching 23 files for \"body\"\n\n/development/projects/10_misc/semanticbeeng.github.io/README.md:\n   26  ## Options\n   27  \n   28: Lanyon includes some customizable options, typically applied via classes on the `<body>` element.\n   29  \n   30  \n   ..\n   54  ![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)\n   55  \n   56: To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:\n   57  \n   58  ```html\n   59: <body class=\"theme-base-08\">\n   60    ...\n   61: </body>\n   62  ```\n   63  \n   ..\n   73  \n   74  ```html\n   75: <body class=\"layout-reverse\">\n   76    ...\n   77: </body>\n   78  ```\n   79  \n   ..\n   84  \n   85  ```html\n   86: <body class=\"sidebar-overlay\">\n   87    ...\n   88: </body>\n   89  ```\n   90  \n   ..\n   94  \n   95  ```html\n   96: <body class=\"layout-reverse sidebar-overlay\">\n   97    ...\n   98: </body>\n   99  ```\n  100  \n\n/development/projects/10_misc/semanticbeeng.github.io/_layouts/default.html:\n    4    {% include head.html %}\n    5  \n    6:   <body>\n    7  \n    8      {% include sidebar.html %}\n    .\n   44        })(document);\n   45      </script>\n   46:   </body>\n   47  </html>\n   48  \n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-01-example-content.md:\n   97      </tr>\n   98    </tfoot>\n   99:   <tbody>\n  100      <tr>\n  101        <td>Alice</td>\n  ...\n  113        <td>9</td>\n  114      </tr>\n  115:   </tbody>\n  116  </table>\n  117  \n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-02-introducing-lanyon.md:\n   23  * Toggleable sliding sidebar (built with only CSS) via **☰** link in top corner\n   24  * Sidebar includes support for textual modules and a dynamically generated navigation with active link support\n   25: * Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes\n   26: * [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes\n   27  \n   28  [Head to the readme](https://github.com/poole/lanyon#readme) to learn more.\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/lanyon.css:\n   37  /* Prevent scroll on narrow devices */\n   38  html,\n   39: body {\n   40    overflow-x: hidden;\n   41  }\n   ..\n  438   * Themes\n  439   *\n  440:  * Apply custom color schemes by adding the appropriate class to the `body`.\n  441   * Based on colors from Base16: http://chriskempson.github.io/base16/#default.\n  442   */\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/poole.css:\n   18   * Contents\n   19   *\n   20:  * Body resets\n   21   * Custom type\n   22   * Messages\n   ..\n   31  \n   32  /*\n   33:  * Body resets\n   34   *\n   35   * Update the foundational and global aspects of the page.\n   ..\n   43  \n   44  html,\n   45: body {\n   46    margin: 0;\n   47    padding: 0;\n   ..\n   59  }\n   60  \n   61: body {\n   62    color: #515151;\n   63    background-color: #fff;\n   ..\n  104  }\n  105  \n  106: /* Body text */\n  107  p {\n  108    margin-top: 0;\n  ...\n  193    font-family: Menlo, Monaco, \"Courier New\", monospace !important;\n  194  }\n  195: .gist .markdown-body {\n  196    padding: 15px;\n  197  }\n  ...\n  247    border: 1px solid #e5e5e5;\n  248  }\n  249: tbody tr:nth-child(odd) td,\n  250: tbody tr:nth-child(odd) th {\n  251    background-color: #f9f9f9;\n  252  }\n\n26 matches across 6 files\n",
+			"contents": "Searching 23 files for \"theme\"\n\n/development/projects/10_misc/semanticbeeng.github.io/README.md:\n    1  # Lanyon\n    2  \n    3: Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.\n    4  \n    5  ![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)\n    .\n   12  - [Options](#options)\n   13    - [Sidebar menu](#sidebar-menu)\n   14:   - [Themes](#themes)\n   15    - [Reverse layout](#reverse-layout)\n   16  - [Development](#development)\n   ..\n   21  ## Usage\n   22  \n   23: Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.\n   24  \n   25  \n   ..\n   43  \n   44  \n   45: ### Themes\n   46  \n   47: Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).\n   48  \n   49: ![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)\n   50: ![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)\n   51  \n   52: There are eight themes available at this time.\n   53  \n   54: ![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)\n   55  \n   56: To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:\n   57  \n   58  ```html\n   59: <body class=\"theme-base-08\">\n   60    ...\n   61  </body>\n   62  ```\n   63  \n   64: To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.\n   65  \n   66  \n\n/development/projects/10_misc/semanticbeeng.github.io/_config.yml:\n    7  # Setup\n    8  title:               Lanyon\n    9: tagline:             'A Jekyll theme'\n   10: description:         'A reserved <a href=\"http://jekyllrb.com\" target=\"_blank\">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href=\"https://twitter.com/mdo\" target=\"_blank\">@mdo</a>.'\n   11  url:                 http://lanyon.getpoole.com\n   12  baseurl:             ''\n\n/development/projects/10_misc/semanticbeeng.github.io/about.md:\n    8  </p>\n    9  \n   10: In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).\n   11  \n   12: There are currently two themes built on Poole:\n   13  \n   14  * [Hyde](http://hyde.getpoole.com)\n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-01-example-content.md:\n    6  \n    7  <div class=\"message\">\n    8:   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.\n    9  </div>\n   10  \n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-02-introducing-lanyon.md:\n    4  ---\n    5  \n    6: Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.\n    7  \n    8  ### Built on Poole\n    9  \n   10: Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by [@mdo](https://twitter.com/mdo). Poole, and every theme built on it (like Lanyon here) includes the following:\n   11  \n   12  * Complete Jekyll setup included (layouts, config, [404](/404), [RSS feed](/atom.xml), posts, and [example page](/about))\n   ..\n   24  * Sidebar includes support for textual modules and a dynamically generated navigation with active link support\n   25  * Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes\n   26: * [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes\n   27  \n   28  [Head to the readme](https://github.com/poole/lanyon#readme) to learn more.\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/lanyon.css:\n   25   * Pagination\n   26   * Reverse layout\n   27:  * Themes\n   28   */\n   29  \n   ..\n  436  \n  437  /*\n  438:  * Themes\n  439   *\n  440   * Apply custom color schemes by adding the appropriate class to the `body`.\n  ...\n  443  \n  444  /* Red */\n  445: .theme-base-08 .sidebar,\n  446: .theme-base-08 .sidebar-toggle:active,\n  447: .theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {\n  448    background-color: #ac4142;\n  449  }\n  450: .theme-base-08 .container a,\n  451: .theme-base-08 .sidebar-toggle,\n  452: .theme-base-08 .related-posts li a:hover {\n  453    color: #ac4142;\n  454  }\n  455  \n  456  /* Orange */\n  457: .theme-base-09 .sidebar,\n  458: .theme-base-09 .sidebar-toggle:active,\n  459: .theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {\n  460    background-color: #d28445;\n  461  }\n  462: .theme-base-09 .container a,\n  463: .theme-base-09 .sidebar-toggle,\n  464: .theme-base-09 .related-posts li a:hover {\n  465    color: #d28445;\n  466  }\n  467  \n  468  /* Yellow */\n  469: .theme-base-0a .sidebar,\n  470: .theme-base-0a .sidebar-toggle:active,\n  471: .theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {\n  472    background-color: #f4bf75;\n  473  }\n  474: .theme-base-0a .container a,\n  475: .theme-base-0a .sidebar-toggle,\n  476: .theme-base-0a .related-posts li a:hover {\n  477    color: #f4bf75;\n  478  }\n  479  \n  480  /* Green */\n  481: .theme-base-0b .sidebar,\n  482: .theme-base-0b .sidebar-toggle:active,\n  483: .theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {\n  484    background-color: #90a959;\n  485  }\n  486: .theme-base-0b .container a,\n  487: .theme-base-0b .sidebar-toggle,\n  488: .theme-base-0b .related-posts li a:hover {\n  489    color: #90a959;\n  490  }\n  491  \n  492  /* Cyan */\n  493: .theme-base-0c .sidebar,\n  494: .theme-base-0c .sidebar-toggle:active,\n  495: .theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {\n  496    background-color: #75b5aa;\n  497  }\n  498: .theme-base-0c .container a,\n  499: .theme-base-0c .sidebar-toggle,\n  500: .theme-base-0c .related-posts li a:hover {\n  501    color: #75b5aa;\n  502  }\n  503  \n  504  /* Blue */\n  505: .theme-base-0d .sidebar,\n  506: .theme-base-0d .sidebar-toggle:active,\n  507: .theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {\n  508    background-color: #6a9fb5;\n  509  }\n  510: .theme-base-0d .container a,\n  511: .theme-base-0d .sidebar-toggle,\n  512: .theme-base-0d .related-posts li a:hover {\n  513    color: #6a9fb5;\n  514  }\n  515  \n  516  /* Magenta */\n  517: .theme-base-0e .sidebar,\n  518: .theme-base-0e .sidebar-toggle:active,\n  519: .theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {\n  520    background-color: #aa759f;\n  521  }\n  522: .theme-base-0e .container a,\n  523: .theme-base-0e .sidebar-toggle,\n  524: .theme-base-0e .related-posts li a:hover {\n  525    color: #aa759f;\n  526  }\n  527  \n  528  /* Brown */\n  529: .theme-base-0f .sidebar,\n  530: .theme-base-0f .sidebar-toggle:active,\n  531: .theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {\n  532    background-color: #8f5536;\n  533  }\n  534: .theme-base-0f .container a,\n  535: .theme-base-0f .sidebar-toggle,\n  536: .theme-base-0f .related-posts li a:hover {\n  537    color: #8f5536;\n  538  }\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/poole.css:\n   26   * Pagination\n   27   * Reverse layout\n   28:  * Themes\n   29   */\n   30  \n\n77 matches across 7 files\n\n\nSearching 23 files for \"body\"\n\n/development/projects/10_misc/semanticbeeng.github.io/README.md:\n   26  ## Options\n   27  \n   28: Lanyon includes some customizable options, typically applied via classes on the `<body>` element.\n   29  \n   30  \n   ..\n   54  ![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)\n   55  \n   56: To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:\n   57  \n   58  ```html\n   59: <body class=\"theme-base-08\">\n   60    ...\n   61: </body>\n   62  ```\n   63  \n   ..\n   73  \n   74  ```html\n   75: <body class=\"layout-reverse\">\n   76    ...\n   77: </body>\n   78  ```\n   79  \n   ..\n   84  \n   85  ```html\n   86: <body class=\"sidebar-overlay\">\n   87    ...\n   88: </body>\n   89  ```\n   90  \n   ..\n   94  \n   95  ```html\n   96: <body class=\"layout-reverse sidebar-overlay\">\n   97    ...\n   98: </body>\n   99  ```\n  100  \n\n/development/projects/10_misc/semanticbeeng.github.io/_layouts/default.html:\n    4    {% include head.html %}\n    5  \n    6:   <body>\n    7  \n    8      {% include sidebar.html %}\n    .\n   44        })(document);\n   45      </script>\n   46:   </body>\n   47  </html>\n   48  \n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-01-example-content.md:\n   97      </tr>\n   98    </tfoot>\n   99:   <tbody>\n  100      <tr>\n  101        <td>Alice</td>\n  ...\n  113        <td>9</td>\n  114      </tr>\n  115:   </tbody>\n  116  </table>\n  117  \n\n/development/projects/10_misc/semanticbeeng.github.io/_posts/2014-01-02-introducing-lanyon.md:\n   23  * Toggleable sliding sidebar (built with only CSS) via **☰** link in top corner\n   24  * Sidebar includes support for textual modules and a dynamically generated navigation with active link support\n   25: * Two orientations for content and sidebar, default (left sidebar) and [reverse](https://github.com/poole/lanyon#reverse-layout) (right sidebar), available via `<body>` classes\n   26: * [Eight optional color schemes](https://github.com/poole/lanyon#themes), available via `<body>` classes\n   27  \n   28  [Head to the readme](https://github.com/poole/lanyon#readme) to learn more.\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/lanyon.css:\n   37  /* Prevent scroll on narrow devices */\n   38  html,\n   39: body {\n   40    overflow-x: hidden;\n   41  }\n   ..\n  438   * Themes\n  439   *\n  440:  * Apply custom color schemes by adding the appropriate class to the `body`.\n  441   * Based on colors from Base16: http://chriskempson.github.io/base16/#default.\n  442   */\n\n/development/projects/10_misc/semanticbeeng.github.io/public/css/poole.css:\n   18   * Contents\n   19   *\n   20:  * Body resets\n   21   * Custom type\n   22   * Messages\n   ..\n   31  \n   32  /*\n   33:  * Body resets\n   34   *\n   35   * Update the foundational and global aspects of the page.\n   ..\n   43  \n   44  html,\n   45: body {\n   46    margin: 0;\n   47    padding: 0;\n   ..\n   59  }\n   60  \n   61: body {\n   62    color: #515151;\n   63    background-color: #fff;\n   ..\n  104  }\n  105  \n  106: /* Body text */\n  107  p {\n  108    margin-top: 0;\n  ...\n  193    font-family: Menlo, Monaco, \"Courier New\", monospace !important;\n  194  }\n  195: .gist .markdown-body {\n  196    padding: 15px;\n  197  }\n  ...\n  247    border: 1px solid #e5e5e5;\n  248  }\n  249: tbody tr:nth-child(odd) td,\n  250: tbody tr:nth-child(odd) th {\n  251    background-color: #f9f9f9;\n  252  }\n\n26 matches across 6 files\n\n\nSearching 22 files for \"site.title\"\n\n/development/projects/10_misc/semanticbeeng.github.io/atom.xml:\n    6  <feed xmlns=\"http://www.w3.org/2005/Atom\">\n    7  \n    8:  <title>{{ site.title }}</title>\n    9   <link href=\"{{ site.url }}{{ site.baseurl }}/atom.xml\" rel=\"self\"/>\n   10   <link href=\"{{ site.url }}{{ site.baseurl }}/\"/>\n\n/development/projects/10_misc/semanticbeeng.github.io/_includes/head.html:\n    9    <title>\n   10      {% if page.title == \"Home\" %}\n   11:       {{ site.title }} &middot; {{ site.tagline }}\n   12      {% else %}\n   13:       {{ page.title }} &middot; {{ site.title }}\n   14      {% endif %}\n   15    </title>\n\n/development/projects/10_misc/semanticbeeng.github.io/_layouts/default.html:\n   14          <div class=\"container\">\n   15            <h3 class=\"masthead-title\">\n   16:             <a href=\"{{ site.baseurl }}/\" title=\"Home\">{{ site.title }}</a>\n   17              <small>{{ site.tagline }}</small>\n   18            </h3>\n\n4 matches across 3 files\n",
 			"settings":
 			{
-				"buffer_size": 11619,
+				"buffer_size": 12611,
 				"line_ending": "Unix",
 				"name": "Find Results",
 				"scratch": true
@@ -98,7 +85,7 @@
 			"file": "_layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 1291,
+				"buffer_size": 1355,
 				"line_ending": "Unix"
 			}
 		},
@@ -162,15 +149,16 @@
 	},
 	"expanded_folders":
 	[
+		"/development/projects/10_misc/semanticbeeng.github.io",
 		"/development/projects/10_misc/semanticbeeng.github.io/_includes"
 	],
 	"file_history":
 	[
+		"/home/nickdsc/.config/sublime-text-3/Packages/SideBarGit/SideBarGit.sublime-settings",
 		"/development/projects/10_misc/semanticbeeng.github.io/index.html",
 		"/development/projects/10_misc/semanticbeeng.github.io/site.sublime-project",
 		"/development/projects/01_devops/docker/baseimage-docker/image/Dockerfile",
 		"/development/projects/01_devops/docker/baseimage-docker/image/buildconfig",
-		"/home/nickdsc/.config/sublime-text-3/Packages/SideBarGit/SideBarGit.sublime-settings",
 		"/home/nickdsc/.config/sublime-text-3/Packages/Jekyll/Jekyll.sublime-settings",
 		"/data/projects/angoss/phoenix/Planning/phoenix.tjp",
 		"/data/projects/angoss/tutorial/tutorial.tjp",
@@ -197,6 +185,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"site.title",
+			"sidebar-checkbox",
 			"body",
 			"theme",
 			"body",
@@ -281,7 +271,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -297,8 +287,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								381,
+								381
 							]
 						],
 						"settings":
@@ -311,39 +301,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/home/nickdsc/.config/sublime-text-3/Packages/SideBarGit/SideBarGit.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 146,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								146,
-								146
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "_includes/sidebar.html",
 					"semi_transient": false,
 					"settings":
@@ -369,11 +331,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "atom.xml",
 					"semi_transient": false,
 					"settings":
@@ -397,11 +359,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "about.md",
 					"semi_transient": false,
 					"settings":
@@ -426,15 +388,15 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11619,
+						"buffer_size": 12611,
 						"regions":
 						{
 							"match":
@@ -853,6 +815,22 @@
 									[
 										11519,
 										11523
+									],
+									[
+										11798,
+										11808
+									],
+									[
+										12103,
+										12113
+									],
+									[
+										12209,
+										12219
+									],
+									[
+										12491,
+										12501
 									]
 								],
 								"scope": ""
@@ -861,15 +839,15 @@
 						"selection":
 						[
 							[
-								9152,
-								9152
+								12316,
+								12316
 							]
 						],
 						"settings":
 						{
 							"detect_indentation": false,
 							"line_numbers": false,
-							"output_tag": 2,
+							"output_tag": 3,
 							"result_base_dir": "",
 							"result_file_regex": "^([^ 	].*):$",
 							"result_line_regex": "^ +([0-9]+):",
@@ -877,27 +855,27 @@
 							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4267.0,
+						"translation.y": 6035.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "_layouts/default.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1291,
+						"buffer_size": 1355,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								640,
-								640
+								295,
+								295
 							]
 						],
 						"settings":
@@ -914,7 +892,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "public/css/lanyon.css",
 					"semi_transient": false,
 					"settings":
@@ -940,11 +918,11 @@
 						"translation.y": 6781.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"semi_transient": false,
 					"settings":
 					{
