@@ -1,1 +1,5 @@
 gitpush.sh
+/.idea
+/semanticbeeng.github.io.iml
+/_site
+/Gemfile.lock
