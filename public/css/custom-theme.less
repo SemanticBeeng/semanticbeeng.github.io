@@ -1,0 +1,186 @@
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+html{
+  background-color: @html-BgColor !important;
+}
+
+body{
+  background-color: @html-BgColor !important;
+}
+
+.wrap>nav {
+  max-width: @tablet-size;
+  position: relative;
+  background-color: #eee8d5;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…gd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'),#eee8d5;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #faf8f2),color-stop(50%, #eee8d5),color-stop(100%, #ded2ad)),#eee8d5;
+  background: -moz-linear-gradient(#faf8f2,#eee8d5,#ded2ad),#eee8d5;
+  background: -webkit-linear-gradient(#faf8f2,#eee8d5,#ded2ad),#eee8d5;
+  background: linear-gradient(#faf8f2,#eee8d5,#ded2ad),#eee8d5;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #c9b67a;
+  padding-top: .35em;
+  padding-bottom: .35em;
+  margin:0 auto;
+
+  @media @gt-than-480w{
+    .hPadding-480w;
+  }
+
+  @media @gt-than-550w{
+    font-size: .9em;
+  }
+
+  @media @gt-than-768w{
+    .hPadding-768w;
+  }
+
+  @media @gt-than-992w{
+    .hPadding-992w;
+  }
+}
+
+.wrap>nav form {
+  background-clip: padding-box;
+  margin: 0;
+  padding: 0;
+
+  @media @gt-than-992w{
+    width: 226px !important;
+  }
+
+  @media @gt-than-550w{
+    float: right;
+    text-align: left;
+    padding-left: .8em;
+    width: 186px;
+  }
+}
+
+.wrap>nav form .search {
+  padding: .3em .5em 0;
+  font-size: .85em;
+  font-family: @search-box-fonts;
+  line-height: 1.1em;
+  width: 95%;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  -moz-box-shadow: #f1ecdc 0 1px;
+  -webkit-box-shadow: #f1ecdc 0 1px;
+  box-shadow: #f1ecdc 0 1px;
+  background-color: #fff;
+  border: 1px solid #dfd4b1;
+  color: #888;
+
+  @media @gt-than-550w{
+    width: 93% !important;
+    font-size: .95em !important;
+    line-height: 1.2em !important;
+  }
+}
+
+.wrap>nav fieldset[role=search] {
+  float:right;
+  width:48%;
+  border:0 !important;
+
+  @media @gt-than-550w{
+    width:99% !important;
+  }
+}
+
+.wrap {
+  .masthead {
+    border-bottom: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    .container {
+      padding-top: 1.5em !important;
+      padding-bottom: 1.5em !important;
+      font-size: 1em !important;
+
+      hgroup {
+        display: block;
+        font-family: @heading-fonts;
+        h1 {
+          a {
+            color: @headline-text-color !important;
+            text-decoration: none;
+            font-family: @heading-fonts;
+          }
+        }
+        h2 {
+          margin: .2em 0 0;
+          font-size: 1em;
+          color: @red-text-color !important;
+          font-weight: normal;
+        }
+      }
+
+      @media @gt-than-992w
+      {
+        .hPadding-992w;
+        font-size: 1.3em !important;
+      }
+
+      @media @gt-than-768w{
+        .hPadding-768w;
+        font-size: 1.2em !important;
+      }
+
+      @media @gt-than-480w{
+        .hPadding-480w;
+        font-size: 1em !important;
+      }
+
+      @media only screen and (min-width: 56em) {
+        max-width: 48rem !important;
+      }
+    }
+  }
+  .content {
+    max-width: @tablet-size;
+    .custom-bg;
+    .page {
+      .message {
+        .custom-bg;
+      }
+    }
+    .posts {
+      .post {
+        .message {
+          .custom-bg;
+        }
+      }
+    }
+    footer {
+      font-size: .8em;
+      color: #586e75;
+      text-shadow: #f5f2e7 0 1px;
+      background-color: #eee8d5;
+      position: relative;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-bottom: 3em;
+      -moz-border-radius-bottomleft: 0.4em;
+      -webkit-border-bottom-left-radius: 0.4em;
+      border-bottom-left-radius: 0.4em;
+      -moz-border-radius-bottomright: 0.4em;
+      -webkit-border-bottom-right-radius: 0.4em;
+      border-bottom-right-radius: 0.4em;
+      z-index: 1;
+    }
+  }
+}
+
+

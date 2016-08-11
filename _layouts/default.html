@@ -12,15 +12,25 @@
     <div class="wrap">
       <div class="masthead">
         <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
+          <hgroup>
+            <h1 class="masthead-title">
+              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            </h1>
+            <h2> {{ site.tagline }}
+          </hgroup>
         </div>
       </div>
-
+      <nav role="navigation">
+        <form action="http://google.com/search" method="get">
+          <fieldset role="search">
+            <input type="hidden" name="sitesearch" value="runarorama.github.com">
+            <input class="search" type="text" name="q" results="0" placeholder="Search">
+          </fieldset>
+        </form>
+      </nav>
       <div class="container content">
         {{ content }}
+        {% include footer.html %}
       </div>
     </div>
 
@@ -44,5 +54,3 @@
       })(document);
     </script>
   </body>
-  {% include footer.html %}
-</html>

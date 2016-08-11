@@ -1,0 +1,27 @@
+{
+  "name": "semanticbeeng.github.io",
+  "version": "1.0.0",
+  "description": "Jekyll site template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SemanticBeeng/semanticbeeng.github.io.git"
+  },
+  "keywords": [
+    "Jekyll",
+    "Lanyon",
+    "blog"
+  ],
+  "author": "semanticbeeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemanticBeeng/semanticbeeng.github.io/issues"
+  },
+  "homepage": "https://github.com/SemanticBeeng/semanticbeeng.github.io",
+  "dependencies": {
+    "less": "^2.7.1"
+  }
+}

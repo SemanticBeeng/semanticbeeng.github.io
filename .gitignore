@@ -2,4 +2,6 @@ gitpush.sh
 /.idea
 /semanticbeeng.github.io.iml
 /_site
+/node_modules
 /Gemfile.lock
+/npm-debug.log
